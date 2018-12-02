@@ -1,0 +1,10 @@
+[Unit]
+Description=Automatically set disk power mode to standby if inactive
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c "/usr/sbin/hdd_standby.py sdb"
+
+[Install]
+WantedBy=multi-user.target
