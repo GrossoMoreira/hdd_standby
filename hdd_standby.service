@@ -1,6 +1,5 @@
 [Unit]
 Description=Automatically set disk power mode to standby if inactive
-After=graphical.target
 
 [Service]
 Type=simple
